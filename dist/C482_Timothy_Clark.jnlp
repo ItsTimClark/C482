@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="C482_Timothy_Clark.jnlp">
+  <information>
+    <title>C482_Timothy_Clark</title>
+    <vendor>ticlark</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="C482_Timothy_Clark.jar" size="35334" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="C482_Timothy_Clark" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="C482TC.Main"  name="C482_Timothy_Clark" />
+  <update check="always"/>
+</jnlp>

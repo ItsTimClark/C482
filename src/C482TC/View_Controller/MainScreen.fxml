@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="375.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="C482TC.View_Controller.MainScreen">
+    <children>
+        <TableView fx:id="parts" layoutX="14.0" layoutY="112.0" prefHeight="175.0" prefWidth="400.0">
+            <columns>
+                <TableColumn fx:id="partsIDColumn" prefWidth="100.0" text="ID" />
+                <TableColumn fx:id="partsNameColumn" prefWidth="100.0" text="Name" />
+                <TableColumn fx:id="partsInvColumn" prefWidth="100.0" text="Inv" />
+                <TableColumn fx:id="partsPriceColumn" prefWidth="100.0" text="Price" />
+            </columns>
+        </TableView>
+        <TableView fx:id="products" layoutX="435.0" layoutY="112.0" prefHeight="175.0" prefWidth="400.0">
+            <columns>
+                <TableColumn fx:id="productsIDColumn" prefWidth="100.0" text="ID" />
+                <TableColumn fx:id="productsNameColumn" prefWidth="100.0" text="Name" />
+                <TableColumn fx:id="productsInvColumn" prefWidth="100.0" text="Inv" />
+                <TableColumn fx:id="productsPriceColumn" prefWidth="100.0" text="Price" />
+            </columns>
+        </TableView>
+        <Label fx:id="lblParts" layoutX="30.0" layoutY="78.0" text="Parts">
+            <font>
+                <Font name="Times New Roman Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblProducts" layoutX="450.0" layoutY="78.0" text="Products">
+            <font>
+                <Font name="Times New Roman Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblMainScreen" layoutX="20.0" layoutY="21.0" text="Inventory Management System">
+            <font>
+                <Font name="Times New Roman Bold" size="18.0" />
+            </font>
+        </Label>
+        <Button fx:id="btnSearchParts" layoutX="302.0" layoutY="79.0" mnemonicParsing="false" onAction="#handlePartsSearch" prefHeight="25.0" prefWidth="52.0" text="Search" />
+        <TextField fx:id="txtSearchParts" layoutX="155.0" layoutY="79.0" prefHeight="25.0" prefWidth="140.0" />
+        <Button fx:id="btnSearchProducts" layoutX="724.0" layoutY="79.0" mnemonicParsing="false" onAction="#handleProductsSearch" text="Search" />
+        <TextField fx:id="txtSearchProducts" layoutX="577.0" layoutY="79.0" prefHeight="25.0" prefWidth="140.0" />
+        <Button fx:id="btnAddParts" layoutX="214.0" layoutY="298.0" mnemonicParsing="false" onAction="#addPartsScreen" prefHeight="25.0" prefWidth="60.0" text="Add" />
+        <Button fx:id="btnModifyParts" layoutX="285.0" layoutY="298.0" mnemonicParsing="false" onAction="#modifyPartsScreen" prefHeight="25.0" prefWidth="60.0" text="Modify" />
+        <Button fx:id="btnDeleteParts" layoutX="354.0" layoutY="298.0" mnemonicParsing="false" onAction="#handlePartsDelete" prefHeight="25.0" prefWidth="60.0" text="Delete" />
+        <Button fx:id="btnAddProducts" layoutX="636.0" layoutY="298.0" mnemonicParsing="false" onAction="#addProductsScreen" prefHeight="25.0" prefWidth="60.0" text="Add" />
+        <Button fx:id="btnModifyProducts" layoutX="706.0" layoutY="298.0" mnemonicParsing="false" onAction="#modifyProductsScreen" prefHeight="25.0" prefWidth="60.0" text="Modify" />
+        <Button fx:id="btnDeleteProducts" layoutX="776.0" layoutY="298.0" mnemonicParsing="false" onAction="#handleProductsDelete" prefHeight="25.0" prefWidth="60.0" text="Delete" />
+        <Button fx:id="btnExit" layoutX="706.0" layoutY="335.0" mnemonicParsing="false" onAction="#exitButton" prefHeight="25.0" prefWidth="130.0" text="Exit" />
+        <Button fx:id="btnClearSearchParts" layoutX="358.0" layoutY="79.0" mnemonicParsing="false" onAction="#clearPartsSearch" prefHeight="25.0" prefWidth="52.0" text="Clear" />
+        <Button fx:id="btnClearSearchProducts" layoutX="780.0" layoutY="79.0" mnemonicParsing="false" onAction="#clearProductsSearch" prefHeight="25.0" prefWidth="52.0" text="Clear" />
+    </children>
+</AnchorPane>
